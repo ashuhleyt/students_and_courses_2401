@@ -18,5 +18,6 @@ RSpec.describe Student do
     @morgan.log_score(89)
     @morgan.log_score(78)
     expect(@morgan.scores).to eq([89, 78])
+    expect(@morgan.grade).to eq(83.5)
   end
 end
